@@ -27,4 +27,8 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python -m compileall -q training service data
+          python -m compileall -q training service data tests
+
+      - name: Run model tests
+        run: |
+          pytest -v tests/
