@@ -1,0 +1,20 @@
+
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# MLflow local tracking database and artifacts
+mlflow.db
+mlruns/
+
+# BentoML local store and build output
+bentoml/
+bentos/
+
+# Environment variables and secrets
+.env
+
+# Python test/cache output
+.pytest_cache/
+.coverage

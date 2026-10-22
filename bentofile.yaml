@@ -1,0 +1,16 @@
+
+service: "service.house_price_service:HousePriceService"
+
+include:
+  - "service/**/*.py"
+
+models:
+  - "real_estate_price_model:latest"
+
+python:
+  packages:
+    - bentoml==1.4.39
+    - scikit-learn
+    - pandas
+    - numpy
+    - pydantic
